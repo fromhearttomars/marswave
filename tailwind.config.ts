@@ -10,6 +10,10 @@ export default {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				sans: ['var(--font-montserrat)'],
+				mono: ['var(--font-poppins)'],
+			},
 			colors: {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
@@ -70,11 +74,16 @@ export default {
 					'0%': { opacity: '1', transform: 'scale(1)' },
 					'100%': { opacity: '0', transform: 'scale(3)' },
 				},
+				fadeIn: {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' },
+				},
 			},
 			animation: {
 				float: 'float 60s ease-in-out infinite',
 				rotate: 'rotate 20s ease-in-out infinite',
 				smoke: 'smoke 2s ease-out infinite',
+				fadeIn: 'fadeIn 1s ease-in forwards',
 			},
 		}
 	},
