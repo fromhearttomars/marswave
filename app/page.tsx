@@ -150,7 +150,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className="relative h-screen max-h-screen overflow-hidden">
       <svg className="opacity-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style={{ transform: 'scale(0.7) translate(-250px, -50px)' }}>
         <path
           id="rocketPath"
@@ -198,7 +198,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="fixed bottom-[-40] left-0 z-10 w-full h-[50vh] mix-blend-overlay opacity-90">
+        <div className="fixed bottom-0 right-0 z-10 w-full h-[50vh] mix-blend-overlay opacity-90">
           <Image
             src="/crowd-blurred.png"
             alt="Crowd Blurred"
