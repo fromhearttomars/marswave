@@ -7,14 +7,15 @@ import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 gsap.registerPlugin(MotionPathPlugin);
 
 export default function Home() {
-  const rocketRef = useRef(null);
-  const rocketRef2 = useRef(null);
-  const smokeContainerRef = useRef(null);
+  const rocketRef = useRef<HTMLDivElement | null>(null);
+  const rocketRef2 = useRef<HTMLDivElement | null>(null);
+  const smokeContainerRef = useRef<HTMLDivElement | null>(null);
+
   const [showFirstText, setShowFirstText] = useState(false);
   const [showSecondText, setShowSecondText] = useState(false);
   const [showThirdText, setShowThirdText] = useState(false);
   const [showSocialIcons, setShowSocialIcons] = useState(false);
-  const [_, setClickCount] = useState(0);
+  const [, setClickCount] = useState(0);
   const [imageSrc, setImageSrc] = useState("/planet.png");
   const [lastAngle, setLastAngle] = useState<number | null>(null);
 
@@ -29,40 +30,44 @@ export default function Home() {
     { name: 'youtube', link: 'https://www.youtube.com/@FromHeartToMars' },
   ];
 
-  const createSmoke = (x, y) => {
+  const createSmoke = (x: number, y: number) => {
     const smoke = document.createElement('div');
     smoke.className = 'smoke absolute w-1 h-1 bg-white rounded-full blur-sm';
     smoke.style.left = `${x}px`;
     smoke.style.top = `${y}px`;
-    document.body.appendChild(smoke);
+    if (smokeContainerRef.current) {
+      smokeContainerRef.current.appendChild(smoke);
+    }
 
     setTimeout(() => {
       smoke.remove();
     }, 500);
   };
 
-  const handleMouseMove = (event) => {
+  const handleMouseMove = (event: { clientX: number; clientY: number; }) => {
     const mouseX = event.clientX - 10;
     const mouseY = event.clientY - 20;
 
-    const angle = Math.atan2(mouseY - rocketRef2.current.offsetTop, mouseX - rocketRef2.current.offsetLeft);
+    if (rocketRef2.current) {
+      const angle = Math.atan2(mouseY - rocketRef2.current.offsetTop, mouseX - rocketRef2.current.offsetLeft);
 
-    if (lastAngle === null) {
-      setLastAngle(angle);
+      if (lastAngle === null) {
+        setLastAngle(angle);
+      }
+
+      const angleDifference = Math.abs(angle - (lastAngle || 0));
+
+      if (angleDifference > 0.05) {
+        rocketRef2.current.style.transition = "transform 0.1s ease-out";
+        rocketRef2.current.style.transform = `rotate(${angle}rad)`;
+        setLastAngle(angle);
+      }
+
+      rocketRef2.current.style.left = `${mouseX}px`;
+      rocketRef2.current.style.top = `${mouseY}px`;
+
+      createSmoke(event.clientX, event.clientY);
     }
-
-    const angleDifference = Math.abs(angle - (lastAngle || 0));
-
-    if (angleDifference > 0.05) {
-      rocketRef2.current.style.transition = "transform 0.1s ease-out";
-      rocketRef2.current.style.transform = `rotate(${angle}rad)`;
-      setLastAngle(angle);
-    }
-
-    rocketRef2.current.style.left = `${mouseX}px`;
-    rocketRef2.current.style.top = `${mouseY}px`;
-
-    createSmoke(event.clientX, event.clientY);
   };
 
   const handleClick = () => {
@@ -98,41 +103,50 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    const path = document.getElementById("rocketPath");
+    const path = document.getElementById("rocketPath") as SVGPathElement | null;
 
-    const rocketTimeline = gsap.timeline();
-    rocketTimeline.to(rocketRef.current, {
-      motionPath: {
-        path: path,
-        align: path,
-        autoRotate: true,
-        alignOrigin: [0.5, 0.5],
-      },
-      duration: 10,
-      ease: 'power1.inOut',
-      onUpdate: () => {
-        const rect = rocketRef.current.getBoundingClientRect();
-        const x = rect.left + rect.width / 2.5;
-        const y = rect.top + rect.height / 2.5;
+    // Проверяем, что путь существует и не равен null
+    if (path && rocketRef.current) {
+      const rocketTimeline = gsap.timeline();
+      rocketTimeline.to(rocketRef.current, {
+        motionPath: {
+          path: path,
+          align: path,
+          autoRotate: true,
+          alignOrigin: [0.5, 0.5],
+        },
+        duration: 10,
+        ease: 'power1.inOut',
+        onUpdate: () => {
+          if (path && rocketRef.current) {
+            const rect = rocketRef.current.getBoundingClientRect();
+            const x = rect.left + rect.width / 2.5;
+            const y = rect.top + rect.height / 2.5;
 
-        const smoke = document.createElement('div');
-        smoke.className = 'absolute w-1 h-1 bg-white rounded-full blur-sm';
-        smoke.style.left = `${x}px`;
-        smoke.style.top = `${y}px`;
-        smokeContainerRef.current.appendChild(smoke);
+            const smoke = document.createElement('div');
+            smoke.className = 'absolute w-1 h-1 bg-white rounded-full blur-sm';
+            smoke.style.left = `${x}px`;
+            smoke.style.top = `${y}px`;
+            if (smokeContainerRef.current) {
+              smokeContainerRef.current.appendChild(smoke);
+            }
 
-        gsap.to(smoke, {
-          opacity: 0,
-          scale: 3,
-          duration: 3,
-          ease: 'power1.out',
-          onComplete: () => smoke.remove(),
-        });
-      },
-      onComplete: () => {
-        gsap.to(rocketRef.current, { opacity: 0, duration: 0.5 });
-      },
-    });
+            gsap.to(smoke, {
+              opacity: 0,
+              scale: 3,
+              duration: 3,
+              ease: 'power1.out',
+              onComplete: () => smoke.remove(),
+            });
+          }
+        },
+        onComplete: () => {
+          if (rocketRef.current) {
+            gsap.to(rocketRef.current, { opacity: 0, duration: 0.5 });
+          }
+        },
+      });
+    }
   }, []);
 
   return (
