@@ -24,7 +24,6 @@ export default function Home() {
     { name: 'discord', link: 'https://discord.gg/VKK84YPq6J' },
     { name: 'facebook', link: 'https://www.facebook.com/FromHeartToMars/' },
     { name: 'instagram', link: 'https://www.instagram.com/fromhearttomars/' },
-    { name: 'reddit', link: 'https://www.reddit.com/user/FromHeartToMars/' },
     { name: 'telegram', link: 'https://t.me/FromHeartToMarsChannel' },
     { name: 'tiktok', link: 'https://www.tiktok.com/@fromhearttomars' },
     { name: 'x', link: 'https://x.com/FromHeartToMars' },
