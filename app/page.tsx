@@ -20,6 +20,7 @@ export default function Home() {
   const [lastAngle, setLastAngle] = useState<number | null>(null);
 
   const socialLinks = [
+    { name: 'pancake', link: 'https://pancakeswap.finance/?outputCurrency=0x1F1376d192123Fd7b390aBA46dAb630B2E3c6514' },
     { name: 'discord', link: 'https://discord.gg/VKK84YPq6J' },
     { name: 'facebook', link: 'https://www.facebook.com/FromHeartToMars/' },
     { name: 'instagram', link: 'https://www.instagram.com/fromhearttomars/' },
@@ -216,7 +217,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="absolute z-10 top-0 left-0 flex flex-col items-center justify-center w-screen h-screen text-white">
+        <div className="absolute z-10 top-0 lg:top-[-40] left-0 flex flex-col items-center justify-center w-screen h-screen text-white">
           <div className='h-10'>
             {showFirstText && (
               <div className="transition-opacity duration-1000 ease-in opacity-0 animate-fadeIn lg:text-4xl text-2xl uppercase tracking-widest">
@@ -233,8 +234,8 @@ export default function Home() {
           </div>
           <div className='h-10'>
             {showThirdText && (
-              <div className="transition-opacity duration-1000 ease-in opacity-0 animate-fadeIn mt-8 text-xl">
-                Coming soon...
+              <div className="transition-opacity duration-1000 ease-in opacity-0 animate-fadeIn mt-8 text-xs lg:text-sm">
+                <a href='https://bscscan.com/address/0x1f1376d192123fd7b390aba46dab630b2e3c6514' target='_blank'>0x1F1376d192123Fd7b390aBA46dAb630B2E3c6514</a>
               </div>
             )}
           </div>
