@@ -10,11 +10,12 @@ MarsWave is our way of doing just that. We’re taking a simple, misunderstood g
 
 Forget the negativity — we’re here to meme our way to Mars with a heart full of hope, humor, and excitement. 💥
 
-🔥 **Join us**:
+### 🔥 **Join us**:
 
-🌐 Visit our [site](https://fromhearttomars.com)!
-🪙 Contract Address: 0x1f1376d192123fd7b390aba46dab630b2e3c6514
-🥞 Buy it on [PancakeSwap](https://pancakeswap.finance/?outputCurrency=0x1F1376d192123Fd7b390aBA46dAb630B2E3c6514)
+- 🌐 Visit our [site](https://fromhearttomars.com)!
+- 🪙 Contract Address: 0x1f1376d192123fd7b390aba46dab630b2e3c6514
+- 🥞 Buy it on [PancakeSwap](https://pancakeswap.finance/?outputCurrency=0x1F1376d192123Fd7b390aBA46dAb630B2E3c6514)
+
 Let’s look to the sky and laugh at the absurdity of it all. The future is ours, and it’s full of memes! 🌟
 
 #FromHeartToMars #MarsWave #MemeCoin #RomanSalute #LookToTheFuture #Science #PositiveVibes #PancakeSwap #CryptoCommunity #MemeRevolution
