@@ -1,21 +1,35 @@
 
-# MarsWave (MVAWE) 🚀
+# MarsWave (MWAVE) 🚀
 
-Welcome to **MarsWave (MVAWE)**, the meme coin revolution that’s ready to launch to Mars — whether you’re ready or not. 🚀
+🚀 Welcome to MarsWave! 🌍💫
 
-**MarsWave (MVAWE)** is based on one accidental gesture by Elon Musk during president's inauguration. You know the one — the "zig" gesture. We decided to take that gesture, give it a little twist, and turn it into a meme coin. Because who needs actual space missions when you can meme your way to the stars, right?
+Not everything that looks like a Roman Salute is bad, right? 😉
+Let’s focus on the future of humanity, not on what’s in the past. Imagine looking up at the stars — a symbol of progress, knowledge, and love. Let’s celebrate science, space exploration, and good vibes. 🌌
+
+MarsWave is our way of doing just that. We’re taking a simple, misunderstood gesture, and turning it into a meme coin that points us toward a better, brighter future. 🚀💖
+
+Forget the negativity — we’re here to meme our way to Mars with a heart full of hope, humor, and excitement. 💥
+
+🔥 **Join us**:
+
+🌐 Visit our [site](https://fromhearttomars.com)!
+🪙 Contract Address: 0x1f1376d192123fd7b390aba46dab630b2e3c6514
+🥞 Buy it on [PancakeSwap](https://pancakeswap.finance/?outputCurrency=0x1F1376d192123Fd7b390aBA46dAb630B2E3c6514)
+Let’s look to the sky and laugh at the absurdity of it all. The future is ours, and it’s full of memes! 🌟
+
+#FromHeartToMars #MarsWave #MemeCoin #RomanSalute #LookToTheFuture #Science #PositiveVibes #PancakeSwap #CryptoCommunity #MemeRevolution
 
 ### Features:
 
-- 🚀 **Meme Coin:** Forget traditional currencies. MarsWave (MVAWE) is the future.
+- 🚀 **Meme Coin:** MarsWave (MWAVE) is just for fun and positivity.
 - ✋ **Elon Musk's Gesture:** We’re not mocking Musk, we're celebrating him.
 - ❤️ **Heart-Shaped Rocket:** Because why not make everything we do a little more cute?
 - 🔥 **Launch Coming Soon:** Buckle up. It’s about to get wild.
 
 ## How it Works
 
-1. **A Gesture:** Inspired by Elon’s infamous "zig" gesture, which we’ve lovingly dubbed “From the Heart to Mars.”
-2. **A Coin:** Because what better way to show your love for memes and crypto than with your very own MarsWave (MVAWE) token?
+1. **A Gesture:** Inspired by Elon’s infamous salute, which we’ve lovingly dubbed “From Heart to Mars.”
+2. **A Coin:** Because what better way to show your love for memes and crypto than with your very own MarsWave (MWAVE) token?
 3. **A Journey:** Watch as the rocket takes a heart-shaped trajectory to the stars. Or at least until we get bored. 🚀
 
 ## Setup 🛠️
@@ -59,7 +73,7 @@ You can deploy this on any server or platform that supports **Next.js**. After b
 
 ## Contributing 📝
 
-We welcome contributions from anyone who wants to join the MarsWave (MVAWE) journey. Here’s how you can help:
+We welcome contributions from anyone who wants to join the MarsWave (MWAVE) journey. Here’s how you can help:
 
 1. **Fork** the repository.
 2. Create a **new branch** for your changes.
@@ -70,7 +84,7 @@ We encourage memes, jokes, and memes about memes. Just make sure your contributi
 
 ## Roadmap 🛤️
 
-1. Launch the **MarsWave (MVAWE) Token** 🚀
+1. Launch the **MarsWave (MWAVE) Token** 🚀
 2. Build the **community** of meme coin enthusiasts 🦸‍♂️
 3. Conquer **Mars** (or at least make a good attempt) 🌍
 4. Make sure everyone knows we were right about the gesture 😏
@@ -78,7 +92,7 @@ We encourage memes, jokes, and memes about memes. Just make sure your contributi
 
 ## License 📜
 
-This project is licensed under the MIT License - to be updated...
+This project is licensed under the MIT License
 
 ---
 
@@ -96,7 +110,7 @@ This project is licensed under the MIT License - to be updated...
 0. **Join Our Airdrops:** To be updated soon...
 1. **Buy Some Tokens:** If you’re not already on board, what are you even doing? 😅
 2. **Spread the Word:** Share with your friends (or enemies, they need this too).
-3. **Enjoy the Ride:** Who knows, maybe MarsWave (MVAWE) will be the future of crypto. Or maybe it’ll just make you smile. Either way, we’re here for it. 🙃
+3. **Enjoy the Ride:** Who knows, maybe MarsWave (MWAVE) will be the future of crypto. Or maybe it’ll just make you smile. Either way, we’re here for it. 🙃
 
 ---
 
