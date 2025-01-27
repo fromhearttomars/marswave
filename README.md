@@ -18,8 +18,6 @@ Forget the negativity — we’re here to meme our way to Mars with a heart full
 
 Let’s look to the sky and laugh at the absurdity of it all. The future is ours, and it’s full of memes! 🌟
 
-#FromHeartToMars #MarsWave #MemeCoin #RomanSalute #LookToTheFuture #Science #PositiveVibes #PancakeSwap #CryptoCommunity #MemeRevolution
-
 ### Features:
 
 - 🚀 **Meme Coin:** MarsWave (MWAVE) is just for fun and positivity.
@@ -100,10 +98,9 @@ This project is licensed under the MIT License
 **Feel free to join the revolution!** You can follow us on:
 
 - [Discord](https://discord.gg/VKK84YPq6J)
-- [Reddit](https://www.reddit.com/user/FromHeartToMars)
 - [Instagram](https://www.instagram.com/fromhearttomars)
 - [Facebook](https://www.facebook.com/FromHeartToMars)
-- [Twitter](https://twitter.com/FromHeartToMars)
+- [X](https://x.com/FromHeartToMars)
 
 ---
 
