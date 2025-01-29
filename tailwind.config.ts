@@ -11,8 +11,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['var(--font-montserrat)'],
-				mono: ['var(--font-poppins)'],
+				sans: ['var(--font-roboto-condensed)'],
 			},
 			colors: {
 				background: 'hsl(var(--background))',

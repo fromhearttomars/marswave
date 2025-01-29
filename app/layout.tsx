@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Montserrat } from 'next/font/google';
+import { Roboto_Condensed } from 'next/font/google';
+import { Layout } from '@/components/index'
 import "./globals.css";
 
-const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '700'], variable: "--font-montserrat" });
+const montserrat = Roboto_Condensed({ subsets: ['latin'], weight: ['200', '300', '400', '700'], variable: "--font-roboto-condensed" });
 
 export const metadata: Metadata = {
   title: "MarsWave: From the Heart to Mars",
@@ -44,7 +45,7 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} antialiased`}
       >
-        {children}
+        <Layout>{children}</Layout>
       </body>
     </html>
   );
