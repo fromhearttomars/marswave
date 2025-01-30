@@ -76,7 +76,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     const path = document.getElementById("rocketPath") as SVGPathElement | null;
 
-    // Проверяем, что путь существует и не равен null
     if (path && rocketRef.current) {
       const rocketTimeline = gsap.timeline();
       rocketTimeline.to(rocketRef.current, {

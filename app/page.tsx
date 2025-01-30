@@ -3,27 +3,44 @@ import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/index'
 
 export default function Home() {
+  const [isFirstLoad, setIsFirstLoad] = useState(true);
   const [showFirstText, setShowFirstText] = useState(false);
   const [showSecondText, setShowSecondText] = useState(false);
   const [showButtons, setShowButtons] = useState(false);
 
   useEffect(() => {
-    const timer1 = setTimeout(() => setShowFirstText(true), 5000);
-    const timer2 = setTimeout(() => setShowSecondText(true), 6000);
-    const timer3 = setTimeout(() => setShowButtons(true), 8000);
+    const hasAnimated = sessionStorage.getItem("hasAnimated");
 
-    return () => {
-      clearTimeout(timer1);
-      clearTimeout(timer2);
-      clearTimeout(timer3);
-    };
+    if (hasAnimated) {
+      setIsFirstLoad(false);
+    } else {
+      sessionStorage.setItem("hasAnimated", "true");
+    }
   }, []);
+
+  useEffect(() => {
+    if (isFirstLoad) {
+      const timer1 = setTimeout(() => setShowFirstText(true), 5000);
+      const timer2 = setTimeout(() => setShowSecondText(true), 6000);
+      const timer3 = setTimeout(() => setShowButtons(true), 8000);
+
+      return () => {
+        clearTimeout(timer1);
+        clearTimeout(timer2);
+        clearTimeout(timer3);
+      };
+    } else {
+      setShowFirstText(true)
+      setShowSecondText(true)
+      setShowButtons(true)
+    }
+  }, [isFirstLoad]);
 
   return (
     <div className="absolute z-10 lg:top-[-40] top-0 left-0 flex flex-col items-center justify-center w-screen h-screen text-white">
       <div className='h-10'>
         {showFirstText && (
-          <div className="transition-opacity duration-1000 ease-in opacity-0 animate-fadeIn lg:text-4xl text-2xl uppercase tracking-widest font-extralight ">
+          <div className="transition-opacity duration-500 ease-in opacity-0 animate-fadeIn lg:text-4xl text-2xl uppercase tracking-widest font-extralight ">
             From heart to Mars
           </div>
         )}
