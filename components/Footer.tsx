@@ -14,7 +14,7 @@ const Footer = () => {
     { name: 'youtube', link: 'https://www.youtube.com/@FromHeartToMars' },
   ];
 
-  return <div className="fixed z-20 bottom-4 flex items-center justify-center gap-6 w-screen h-6 text-white animate-fadeIn opacity-0 transition-opacity">
+  return <div className="fixed z-20 bottom-4 flex items-center justify-center gap-6 w-screen h-6 text-white animate-fadeIn opacity-0 transition-opacity p-4">
     {socialLinks.map((item) =>
       <a href={item.link} key={item.name} target='_blank' className='opacity-70 hover:opacity-100 transition-opacity'>
         <Image

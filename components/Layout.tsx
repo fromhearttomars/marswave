@@ -132,7 +132,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       />
     </svg>
     <div className="flex flex-col">
-      <div className="absolute top-0 left-0 w-full h-[200vh] animate-float">
+      <div className="absolute top-0 left-0 w-full h-screen lg:h-[200vh] lg:animate-float">
         <Image
           src="/background.jpg"
           alt="Background"
