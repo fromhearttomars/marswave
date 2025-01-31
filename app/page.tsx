@@ -37,7 +37,7 @@ export default function Home() {
   }, [isFirstLoad]);
 
   return (
-    <div className="absolute z-10 lg:top-[-40] top-0 left-0 flex flex-col items-center justify-center w-screen h-screen text-white">
+    <div className="flex flex-col items-center justify-start lg:justify-center w-full h-full text-white">
       <div className='h-10'>
         {showFirstText && (
           <div className="transition-opacity duration-500 ease-in opacity-0 animate-fadeIn lg:text-4xl text-2xl uppercase tracking-widest font-extralight ">
@@ -55,8 +55,8 @@ export default function Home() {
       <div className='h-10'>
         {showButtons && (
           <div className="transition-opacity duration-500 ease-in opacity-0 animate-fadeIn mt-8 flex gap-4">
-            <Button variant="outline"><a href='https://bscscan.com/address/0x1f1376d192123fd7b390aba46dab630b2e3c6514' target='_blank'>EXPLORE</a></Button>
-            <Button className='bg-[#eb5247]'><a href='https://pancakeswap.finance/?outputCurrency=0x1F1376d192123Fd7b390aBA46dAb630B2E3c6514' target='_blank'>GET IT NOW</a></Button>
+            <Button className='min-w-32' variant="outline"><a href='https://bscscan.com/address/0x1f1376d192123fd7b390aba46dab630b2e3c6514' target='_blank'>Explore</a></Button>
+            <Button className='bg-[#eb5247] min-w-32'><a href='https://pancakeswap.finance/?outputCurrency=0x1F1376d192123Fd7b390aBA46dAb630B2E3c6514' target='_blank'>Get MWAVE now</a></Button>
           </div>
         )}
       </div>

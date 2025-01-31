@@ -14,7 +14,7 @@
 }
 
 .gradient {
-  background: -webkit-linear-gradient(#ffd68e, rgb(235, 82, 71));
+  background: -webkit-linear-gradient(#ffd68e, #eb5247);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
