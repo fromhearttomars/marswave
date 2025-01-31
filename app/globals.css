@@ -13,6 +13,16 @@
   transition: opacity 0.2s ease-out, transform 0.1s ease-out;
 }
 
+.active::after {
+  content: "";
+  position: relative;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 2px;
+  background-color: #eb5247;
+}
+
 .gradient {
   background: -webkit-linear-gradient(#ffd68e, #eb5247);
   background-clip: text;
@@ -63,7 +73,7 @@
     --muted-foreground: 0 0% 63.9%;
     --accent: 0 0% 14.9%;
     --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 4 80% 60%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
